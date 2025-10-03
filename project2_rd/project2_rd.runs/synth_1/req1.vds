@@ -1,0 +1,325 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Jul 16 16:32:26 2025
+# Process ID         : 42036
+# Current directory  : /home/adnaan/RealDigital _Projects/project2_rd/project2_rd.runs/synth_1
+# Command line       : vivado -log req1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source req1.tcl
+# Log file           : /home/adnaan/RealDigital _Projects/project2_rd/project2_rd.runs/synth_1/req1.vds
+# Journal file       : /home/adnaan/RealDigital _Projects/project2_rd/project2_rd.runs/synth_1/vivado.jou
+# Running On         : adnaan-pc
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-1245U
+# CPU Frequency      : 3891.465 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 16419 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20714 MB
+# Available Virtual  : 15071 MB
+#-----------------------------------------------------------
+source req1.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/utils_1/imports/synth_1/req1.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/utils_1/imports/synth_1/req1.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top req1 -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 42078
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2103.191 ; gain = 442.766 ; free physical = 4681 ; free virtual = 13147
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'req1' [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/sources_1/new/req1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'req1' (0#1) [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/sources_1/new/req1.v:23]
+WARNING: [Synth 8-3848] Net RGB_led_A in module/entity req1 does not have driver. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/sources_1/new/req1.v:26]
+WARNING: [Synth 8-3848] Net RGB_led_B in module/entity req1 does not have driver. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/sources_1/new/req1.v:27]
+WARNING: [Synth 8-7129] Port led[2] in module req1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_led_A[2] in module req1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_led_A[1] in module req1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_led_A[0] in module req1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_led_B[2] in module req1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_led_B[1] in module req1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_led_B[0] in module req1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2177.160 ; gain = 516.734 ; free physical = 4600 ; free virtual = 13067
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2194.973 ; gain = 534.547 ; free physical = 4596 ; free virtual = 13063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2194.973 ; gain = 534.547 ; free physical = 4596 ; free virtual = 13063
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2194.973 ; gain = 0.000 ; free physical = 4596 ; free virtual = 13063
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_an[0]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_an[1]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_an[2]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_an[3]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[0]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[1]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[2]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[3]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[4]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[5]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[6]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[7]'. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.srcs/constrs_1/imports/Downloads/blackboard_revD.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/req1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/req1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2297.711 ; gain = 0.000 ; free physical = 4588 ; free virtual = 13056
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2297.746 ; gain = 0.000 ; free physical = 4588 ; free virtual = 13056
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2297.746 ; gain = 637.320 ; free physical = 4617 ; free virtual = 13084
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2305.715 ; gain = 645.289 ; free physical = 4617 ; free virtual = 13084
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2305.715 ; gain = 645.289 ; free physical = 4617 ; free virtual = 13084
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2305.715 ; gain = 645.289 ; free physical = 4620 ; free virtual = 13088
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port led[2] in module req1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_led_A[2] in module req1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_led_A[1] in module req1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_led_A[0] in module req1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_led_B[2] in module req1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_led_B[1] in module req1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_led_B[0] in module req1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2305.715 ; gain = 645.289 ; free physical = 4620 ; free virtual = 13092
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2357.715 ; gain = 697.289 ; free physical = 4532 ; free virtual = 13004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2357.715 ; gain = 697.289 ; free physical = 4532 ; free virtual = 13004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2366.730 ; gain = 706.305 ; free physical = 4524 ; free virtual = 12996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2550.543 ; gain = 890.117 ; free physical = 4361 ; free virtual = 12833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2550.543 ; gain = 890.117 ; free physical = 4361 ; free virtual = 12833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2550.543 ; gain = 890.117 ; free physical = 4361 ; free virtual = 12833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2550.543 ; gain = 890.117 ; free physical = 4361 ; free virtual = 12833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2550.543 ; gain = 890.117 ; free physical = 4361 ; free virtual = 12833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2550.543 ; gain = 890.117 ; free physical = 4361 ; free virtual = 12833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT4  |     2|
+|2     |IBUF  |     8|
+|3     |OBUF  |     2|
+|4     |OBUFT |     7|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2550.543 ; gain = 890.117 ; free physical = 4361 ; free virtual = 12833
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2550.543 ; gain = 787.344 ; free physical = 4361 ; free virtual = 12833
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2550.551 ; gain = 890.117 ; free physical = 4361 ; free virtual = 12833
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2550.551 ; gain = 0.000 ; free physical = 4361 ; free virtual = 12833
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2550.551 ; gain = 0.000 ; free physical = 4533 ; free virtual = 13005
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 36a61988
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 45 Warnings, 28 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 2550.578 ; gain = 997.754 ; free physical = 4533 ; free virtual = 13005
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1661.162; main = 1661.162; forked = 242.813
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3269.570; main = 2550.547; forked = 963.852
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2574.555 ; gain = 0.000 ; free physical = 4533 ; free virtual = 13005
+INFO: [Common 17-1381] The checkpoint '/home/adnaan/RealDigital _Projects/project2_rd/project2_rd.runs/synth_1/req1.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file req1_utilization_synth.rpt -pb req1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 16 16:32:45 2025...

@@ -1,0 +1,22 @@
+# Vivado build artifacts
+*.jou
+*.log
+*.str
+*.strl
+*.xpr.lock
+
+# Vivado-generated dirs
+.cache/
+.hw/
+.ip_user_files/
+.runs/
+.sim/
+.webtalk/
+
+# Temporary files
+*.wdb
+*.dcp
+*.bit
+*.bin
+*.xml
+
