@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="adnaan" Host="debian" Pid="15547" HostCore="12" HostMemory="32800240">
-    </Process>
-</ProcessHandle>
