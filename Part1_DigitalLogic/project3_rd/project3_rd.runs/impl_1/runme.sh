@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.runs/impl_1'
+HD_PWD='/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -38,7 +38,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log proj3.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source proj3.tcl -notrace
 
 

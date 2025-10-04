@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.runs/synth_1'
+HD_PWD='/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

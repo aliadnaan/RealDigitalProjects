@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc} rfile:../../../project3_rd.srcs/constrs_1/new/proj3.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc rfile:../../../project3_rd.srcs/constrs_1/new/proj3.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN H16   IOSTANDARD LVCMOS33 } [get_ports { clk }];
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]

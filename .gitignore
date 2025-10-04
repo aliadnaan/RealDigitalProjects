@@ -1,22 +1,28 @@
-# Vivado build artifacts
+# Vivado auto-generated files and folders
 *.jou
 *.log
 *.str
 *.strl
 *.xpr.lock
+*.xml
 
-# Vivado-generated dirs
 .cache/
 .hw/
 .ip_user_files/
 .runs/
 .sim/
 .webtalk/
+.gen/
+.na/
 
-# Temporary files
-*.wdb
-*.dcp
+# Bitstreams / Checkpoints / Reports
 *.bit
 *.bin
-*.xml
+*.dcp
+*.rpt
+*.wdb
+*.pb
 
+# Backups
+*.backup.jou
+*.backup.log

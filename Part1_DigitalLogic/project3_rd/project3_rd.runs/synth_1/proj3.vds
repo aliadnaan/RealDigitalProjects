@@ -3,208 +3,201 @@
 # SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Fri Sep 12 01:29:43 2025
-# Process ID         : 460692
-# Current directory  : /home/adnaan/RealDigital _Projects/project3_rd/project3_rd.runs/synth_1
+# Start of session at: Sat Oct  4 11:41:15 2025
+# Process ID         : 15639
+# Current directory  : /home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.runs/synth_1
 # Command line       : vivado -log proj3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source proj3.tcl
-# Log file           : /home/adnaan/RealDigital _Projects/project3_rd/project3_rd.runs/synth_1/proj3.vds
-# Journal file       : /home/adnaan/RealDigital _Projects/project3_rd/project3_rd.runs/synth_1/vivado.jou
-# Running On         : adnaan-pc
-# Platform           : Ubuntu
-# Operating System   : Ubuntu 24.04.3 LTS
-# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-1245U
-# CPU Frequency      : 400.000 MHz
-# CPU Physical cores : 10
+# Log file           : /home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.runs/synth_1/proj3.vds
+# Journal file       : /home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.runs/synth_1/vivado.jou
+# Running On         : debian
+# Platform           : Debian
+# Operating System   : Debian GNU/Linux 13 (trixie)
+# Processor Detail   : AMD Ryzen 5 3600XT 6-Core Processor
+# CPU Frequency      : 3906.997 MHz
+# CPU Physical cores : 6
 # CPU Logical cores  : 12
-# Host memory        : 16420 MB
-# Swap memory        : 4294 MB
-# Total Virtual      : 20715 MB
-# Available Virtual  : 7694 MB
+# Host memory        : 33587 MB
+# Swap memory        : 4220 MB
+# Total Virtual      : 37807 MB
+# Available Virtual  : 29653 MB
 #-----------------------------------------------------------
 source proj3.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental {/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/utils_1/imports/synth_1/proj3.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from /home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/utils_1/imports/synth_1/proj3.dcp for incremental synthesis
-INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top proj3 -part xc7z007sclg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
 INFO: [Device 21-403] Loading part xc7z007sclg400-1
-INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
-INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 460743
+INFO: [Synth 8-7075] Helper process launched with PID 15685
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2104.891 ; gain = 444.734 ; free physical = 1100 ; free virtual = 6090
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2120.090 ; gain = 439.828 ; free physical = 14019 ; free virtual = 27051
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'proj3' [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/sources_1/new/proj3.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'proj3' (0#1) [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/sources_1/new/proj3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'proj3' [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/sources_1/new/proj3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'proj3' (0#1) [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/sources_1/new/proj3.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2176.859 ; gain = 516.703 ; free physical = 1014 ; free virtual = 6005
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2193.059 ; gain = 512.797 ; free physical = 13936 ; free virtual = 26970
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2194.672 ; gain = 534.516 ; free physical = 1010 ; free virtual = 6002
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2210.871 ; gain = 530.609 ; free physical = 13924 ; free virtual = 26958
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2194.672 ; gain = 534.516 ; free physical = 1010 ; free virtual = 6002
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2210.871 ; gain = 530.609 ; free physical = 13924 ; free virtual = 26958
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2194.672 ; gain = 0.000 ; free physical = 1010 ; free virtual = 6002
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2210.871 ; gain = 0.000 ; free physical = 13924 ; free virtual = 26958
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc]
-WARNING: [Vivado 12-584] No ports matched 'clk'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:4]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:4]
+Parsing XDC File [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:4]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:8]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:8]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[2]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:9]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:9]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[3]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:10]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:10]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[4]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:11]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:11]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[5]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:12]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:12]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[6]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:13]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:13]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[7]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:14]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:14]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[8]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:15]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[9]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:16]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:16]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[0]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:19]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[0]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:19]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[1]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[1]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:20]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[2]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[2]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:21]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[0]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[0]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:23]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[1]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[1]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:24]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[2]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[2]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:25]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:33]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:34]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:34]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:35]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:35]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:36]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:36]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:37]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:37]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:38]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:38]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:39]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:39]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:42]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:42]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:43]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:43]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:44]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:44]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:45]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:45]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg_an[0]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:48]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'seg_an[0]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:48]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg_an[1]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:49]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'seg_an[1]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:49]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg_an[2]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'seg_an[2]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:50]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg_an[3]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:51]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'seg_an[3]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:51]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg_cat[0]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[0]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:54]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg_cat[1]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:55]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[1]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:55]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg_cat[2]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:56]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[2]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:56]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg_cat[3]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:57]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[3]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:57]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg_cat[4]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:58]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[4]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:58]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg_cat[5]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:59]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[5]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:59]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg_cat[6]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[6]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:60]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg_cat[7]'. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:61]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[7]'. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc:61]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/proj3_propImpl.xdc].
+Finished Parsing XDC File [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/proj3_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/proj3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2322.410 ; gain = 0.000 ; free physical = 1008 ; free virtual = 5999
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2335.609 ; gain = 0.000 ; free physical = 13861 ; free virtual = 26911
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2322.445 ; gain = 0.000 ; free physical = 1008 ; free virtual = 5999
-INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
-INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2335.645 ; gain = 0.000 ; free physical = 13861 ; free virtual = 26911
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2322.445 ; gain = 662.289 ; free physical = 1051 ; free virtual = 6042
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2335.645 ; gain = 655.383 ; free physical = 13876 ; free virtual = 26926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2330.414 ; gain = 670.258 ; free physical = 1051 ; free virtual = 6042
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2343.613 ; gain = 663.352 ; free physical = 13876 ; free virtual = 26926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2330.414 ; gain = 670.258 ; free physical = 1051 ; free virtual = 6042
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2343.613 ; gain = 663.352 ; free physical = 13876 ; free virtual = 26926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2330.414 ; gain = 670.258 ; free physical = 1072 ; free virtual = 6064
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2343.613 ; gain = 663.352 ; free physical = 13880 ; free virtual = 26931
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -227,25 +220,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2330.414 ; gain = 670.258 ; free physical = 1075 ; free virtual = 6071
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2343.613 ; gain = 663.352 ; free physical = 13878 ; free virtual = 26935
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2355.414 ; gain = 695.258 ; free physical = 998 ; free virtual = 5994
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2385.613 ; gain = 705.352 ; free physical = 13833 ; free virtual = 26897
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2355.414 ; gain = 695.258 ; free physical = 998 ; free virtual = 5994
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2385.613 ; gain = 705.352 ; free physical = 13833 ; free virtual = 26897
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2364.430 ; gain = 704.273 ; free physical = 990 ; free virtual = 5986
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2395.629 ; gain = 715.367 ; free physical = 13833 ; free virtual = 26897
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -263,37 +256,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2548.242 ; gain = 888.086 ; free physical = 843 ; free virtual = 5839
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.441 ; gain = 891.180 ; free physical = 13676 ; free virtual = 26741
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2548.242 ; gain = 888.086 ; free physical = 843 ; free virtual = 5839
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.441 ; gain = 891.180 ; free physical = 13676 ; free virtual = 26741
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2548.242 ; gain = 888.086 ; free physical = 843 ; free virtual = 5839
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.441 ; gain = 891.180 ; free physical = 13676 ; free virtual = 26741
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2548.242 ; gain = 888.086 ; free physical = 843 ; free virtual = 5839
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.441 ; gain = 891.180 ; free physical = 13676 ; free virtual = 26741
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2548.242 ; gain = 888.086 ; free physical = 843 ; free virtual = 5839
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.441 ; gain = 891.180 ; free physical = 13676 ; free virtual = 26741
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2548.242 ; gain = 888.086 ; free physical = 843 ; free virtual = 5839
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.441 ; gain = 891.180 ; free physical = 13676 ; free virtual = 26741
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -314,28 +307,28 @@ Report Cell Usage:
 |3     |OBUF |     1|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2548.242 ; gain = 888.086 ; free physical = 843 ; free virtual = 5839
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.441 ; gain = 891.180 ; free physical = 13676 ; free virtual = 26741
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2548.242 ; gain = 760.312 ; free physical = 843 ; free virtual = 5839
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2548.250 ; gain = 888.086 ; free physical = 843 ; free virtual = 5839
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2571.441 ; gain = 766.406 ; free physical = 13676 ; free virtual = 26741
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2571.449 ; gain = 891.180 ; free physical = 13676 ; free virtual = 26741
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2548.250 ; gain = 0.000 ; free physical = 843 ; free virtual = 5839
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2571.449 ; gain = 0.000 ; free physical = 13676 ; free virtual = 26742
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2548.250 ; gain = 0.000 ; free physical = 1017 ; free virtual = 6013
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2571.449 ; gain = 0.000 ; free physical = 13778 ; free virtual = 26845
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: aca38165
 INFO: [Common 17-83] Releasing license: Synthesis
-21 Infos, 40 Warnings, 39 Critical Warnings and 0 Errors encountered.
+15 Infos, 40 Warnings, 39 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 2548.277 ; gain = 993.754 ; free physical = 1017 ; free virtual = 6013
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1810.769; main = 1810.769; forked = 290.380
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3294.277; main = 2548.246; forked = 963.859
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2571.477 ; gain = 1044.629 ; free physical = 13778 ; free virtual = 26844
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1767.219; main = 1765.502; forked = 275.895
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3291.293; main = 2571.441; forked = 955.684
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2572.254 ; gain = 0.000 ; free physical = 1017 ; free virtual = 6013
-INFO: [Common 17-1381] The checkpoint '/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.runs/synth_1/proj3.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2595.453 ; gain = 0.000 ; free physical = 13778 ; free virtual = 26844
+INFO: [Common 17-1381] The checkpoint '/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.runs/synth_1/proj3.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file proj3_utilization_synth.rpt -pb proj3_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Sep 12 01:30:03 2025...
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  4 11:41:43 2025...

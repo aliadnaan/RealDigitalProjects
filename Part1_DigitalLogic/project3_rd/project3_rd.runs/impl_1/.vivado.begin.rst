@@ -1,25 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="adnaan" Host="adnaan-pc" Pid="453606" HostCore="12" HostMemory="16035828">
+    <Process Command="vivado" Owner="adnaan" Host="debian" Pid="16003" HostCore="12" HostMemory="32800240">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="adnaan" Host="adnaan-pc" Pid="456573" HostCore="12" HostMemory="16035828">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="adnaan" Host="adnaan-pc" Pid="458668" HostCore="12" HostMemory="16035828">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="adnaan" Host="adnaan-pc" Pid="459960" HostCore="12" HostMemory="16035828">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="adnaan" Host="adnaan-pc" Pid="460973" HostCore="12" HostMemory="16035828">
+    <Process Command="vivado" Owner="adnaan" Host="debian" Pid="17281" HostCore="12" HostMemory="32800240">
     </Process>
 </ProcessHandle>

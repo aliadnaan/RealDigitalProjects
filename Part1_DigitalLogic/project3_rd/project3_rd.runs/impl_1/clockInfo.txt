@@ -1,7 +1,7 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.1
-| Date         : Fri Sep 12 01:30:35 2025
-| Host         : adnaan-pc
+| Date         : Sat Oct  4 11:42:36 2025
+| Host         : debian
 | Design       : design_1
 | Device       : xc7z007s-clg400-1--
 -------------------------------------

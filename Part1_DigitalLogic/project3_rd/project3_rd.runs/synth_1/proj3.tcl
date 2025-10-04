@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.runs/synth_1/proj3.tcl"
+  variable script "/home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.runs/synth_1/proj3.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,24 +56,22 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 set_param general.usePosixSpawnForFork 1
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z007sclg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.cache/wt} [current_project]
-set_property parent.project_path {/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.xpr} [current_project]
+set_property webtalk.parent_dir /home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.cache/wt [current_project]
+set_property parent.project_path /home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.cache/ip} [current_project]
+set_property ip_output_repo /home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib {{/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/sources_1/new/proj3.v}}
+read_verilog -library xil_defaultlib /home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/sources_1/new/proj3.v
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -83,12 +81,10 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc}}
-set_property used_in_implementation false [get_files {{/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc}}]
+read_xdc /home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc
+set_property used_in_implementation false [get_files /home/adnaan/Projects/RealDigitalProjects/Part1_DigitalLogic/project3_rd/project3_rd.srcs/constrs_1/new/proj3.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
-
-read_checkpoint -auto_incremental -incremental {/home/adnaan/RealDigital _Projects/project3_rd/project3_rd.srcs/utils_1/imports/synth_1/proj3.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
