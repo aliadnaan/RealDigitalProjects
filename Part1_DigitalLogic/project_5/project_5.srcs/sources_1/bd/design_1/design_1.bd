@@ -1,0 +1,120 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x28204C9228204C92",
+      "device": "xc7z007sclg400-2",
+      "gen_directory": "../../../../project_5.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "mux_0": "",
+      "demux_0": ""
+    },
+    "ports": {
+      "sw": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "btn": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "led": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "mux_0": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_mux_0_0",
+        "xci_path": "ip/design_1_mux_0_0/design_1_mux_0_0.xci",
+        "inst_hier_path": "mux_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "S": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      },
+      "demux_0": {
+        "vlnv": "xilinx.com:module_ref:demux:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_demux_0_0",
+        "xci_path": "ip/design_1_demux_0_0/design_1_demux_0_0.xci",
+        "inst_hier_path": "demux_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "demux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "EN": {
+            "direction": "I"
+          },
+          "I": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "I_0_1": {
+        "ports": [
+          "sw",
+          "mux_0/I"
+        ]
+      },
+      "S_0_1": {
+        "ports": [
+          "btn",
+          "mux_0/S",
+          "demux_0/I"
+        ]
+      },
+      "demux_0_Y": {
+        "ports": [
+          "demux_0/Y",
+          "led"
+        ]
+      },
+      "mux_0_Y": {
+        "ports": [
+          "mux_0/Y",
+          "demux_0/EN"
+        ]
+      }
+    }
+  }
+}

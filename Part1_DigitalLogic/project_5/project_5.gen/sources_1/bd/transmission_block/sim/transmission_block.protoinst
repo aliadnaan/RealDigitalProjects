@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"transmission_block": {
+			"proto_instances": {
+			}
+		}
+	}
+}

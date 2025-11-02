@@ -1,0 +1,178 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD872E1D34F4BC5B9",
+      "device": "xc7z007sclg400-2",
+      "gen_directory": "../../../../project_5.gen/sources_1/bd/transmission_block",
+      "name": "transmission_block",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "counter_0": "",
+      "mux_8to1_0": "",
+      "demux_1to8_0": ""
+    },
+    "ports": {
+      "sw": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "led": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "transmission_block_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "counter_0": {
+        "vlnv": "xilinx.com:module_ref:counter:1.0",
+        "ip_revision": "1",
+        "xci_name": "transmission_block_counter_0_0",
+        "xci_path": "ip/transmission_block_counter_0_0/transmission_block_counter_0_0.xci",
+        "inst_hier_path": "counter_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "transmission_block_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "B": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "mux_8to1_0": {
+        "vlnv": "xilinx.com:module_ref:mux_8to1:1.0",
+        "ip_revision": "1",
+        "xci_name": "transmission_block_mux_8to1_0_0",
+        "xci_path": "ip/transmission_block_mux_8to1_0_0/transmission_block_mux_8to1_0_0.xci",
+        "inst_hier_path": "mux_8to1_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux_8to1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "S": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      },
+      "demux_1to8_0": {
+        "vlnv": "xilinx.com:module_ref:demux_1to8:1.0",
+        "ip_revision": "1",
+        "xci_name": "transmission_block_demux_1to8_0_0",
+        "xci_path": "ip/transmission_block_demux_1to8_0_0/transmission_block_demux_1to8_0_0.xci",
+        "inst_hier_path": "demux_1to8_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "demux_1to8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "EN": {
+            "direction": "I"
+          },
+          "I": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "I_0_1": {
+        "ports": [
+          "sw",
+          "mux_8to1_0/I"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "counter_0/clk"
+        ]
+      },
+      "counter_0_B": {
+        "ports": [
+          "counter_0/B",
+          "demux_1to8_0/I",
+          "mux_8to1_0/S"
+        ]
+      },
+      "demux_1to8_0_Y": {
+        "ports": [
+          "demux_1to8_0/Y",
+          "led"
+        ]
+      },
+      "mux_8to1_0_Y": {
+        "ports": [
+          "mux_8to1_0/Y",
+          "demux_1to8_0/EN"
+        ]
+      }
+    }
+  }
+}
